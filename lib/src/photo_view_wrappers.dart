@@ -180,7 +180,7 @@ class _ImageWrapperState extends State<ImageWrapper> {
       widget.maxScale ?? double.infinity,
       widget.initialScale ?? PhotoViewComputedScale.contained,
       widget.outerSize,
-      _imageSize!,
+      _imageSize ?? const Size(0, 0),
     );
 
     return PhotoViewCore(
